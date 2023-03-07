@@ -1,0 +1,98 @@
+:root{
+    --cor-de-fundo:#140e14;
+    --cor-cabecalho:#243358;
+    --fonte-principal:inter;
+    --cor-fonte:#ae9afa;
+    --cor-fonte-destaques:#5e61ab;
+    --cor-titulos:#ffdff4;
+
+}
+header{
+    background: var(--cor-cabecalho);
+    padding: 20px 0;
+
+
+}
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    font-family: inter;
+}
+#paginas{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+#paginas li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+#paginas a{
+    color: var(--cor-fonte);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#paginas a:hover{
+    color: var(--cor-titulos);
+    text-decoration: underline;
+}
+#banner{
+    height: 370px;
+    width: 100%;
+}
+.Principal{
+    background: var(--cor-de-fundo);
+    font-family: inter;
+    color: var(--cor-fonte);
+
+}
+.segundotitulo{
+    text-align: center;
+    color: var(--cor-titulos);
+    font-size: 20px;
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    padding: 10px 10px;
+}
+#p2{
+    font-size: 20px;
+}
+strong{
+    text-decoration: underline;
+    font-weight: bold;
+}
+em strong{
+    color: var(--cor-fonte-destaques);
+}
+.beneficios{
+    background: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+}
+.titulocentralizado{
+    text-align: center;
+    font-size: bold;
+    color: var(--cor-titulos);
+}
+.container--itens-beneficios{
+    color: var(--cor-fonte);
+
+}
+.itens{
+    display:inline;
+    margin: 5em;
+}
+.imagembeneficios{
+    width: 50%; 
+    margin: 4em 0 5em 25%; 
+}
+footer{
+    background: var(--cor-de-fundo);
+    text-align: center;
+    padding: 20px 0;
+    font-family: inter;
+    color: var(--cor-fonte);
+}

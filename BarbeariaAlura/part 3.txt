@@ -1,0 +1,116 @@
+Parte 3 
+Ex:
+     <form></form>Para Formulario
+	<form>
+	<label for="nomesobrenome"Nome e Sobrenome</label>
+	<input type="text" id="nomesobrenome"</input>
+     </form>
+Para for="" do label funcionar precisa criar um id=""
+Se houver input haverá label um sempre acompanha o outro
+input sempre é unico podem então usar um id ao invés de uma class importante manter junto
+
+todo fumulario tem um input "submit" envio.
+	<input type"submit">
+
+Para garantir que independete da tradução "submit" sejá sempre enviar damos um valor "value=",
+atribuido como "type=" ->tipo 
+
+	<label> serve de etiuqeta para o <input> tornando a estrutura de entrada de dados melhor
+
+todo formulario é inline, para arrumar isso no css: 
+	form label{
+		display:block;
+	}
+	form{
+		display:block;
+	} 
+Entrada de Mensagem tag <textarea></textarea> essa tag é possivel alterar o tamanho com o mouse usando a configuração  
+cols="30"  que mantem quantidade de colunas a quantidade aumenta a largura,rows="10" para aumentar numero de linhas 
+isso aumenta a altura do nosso quadrado de texto não sendo necessario pois iremos trartar melhor disso no CSS.
+
+continuando com label para da etiqueta a caixa de mensagem 
+	<label for="mensagem">Mensagem</label>
+
+SELEÇÃO DE OPIÇÕES PARA UM UNICO TOPICO
+input tipo radio
+
+	<label for="radio-email">Mensagem<label/>
+	<input type="radio" value="email" id="radio-email">
+
+email em value é apenas o valor que o input vai ter que é um valor relacionado ao conteudo dele não aparecerar como texto o 
+que fará o aparecer uma mensagem será o label que terá um email
+e será usado o id para que o for funcione 
+
+para haver uma unica selecão será preciso criar uma nova propriedade chamando a de name="contatos" em todo os type
+chamada contatos antes do valor "value".
+Propriedade "name" só pode ser "preenchida" uma unica vez desmarcando outras 
+
+input dentro do label 	
+	<label><input type="checkbox"></label>
+
+"facilitando" não ter que escrever dessa forma:
+	<label for="radio-email">Mensagem<label/>
+	<input type="radio" value="email" id="radio-email">
+
+Forças de prioridade
+tag 1, class 10, id 100, inline= css 1000
+
+Tipo seletor <select>
+			<option>Manhã</option>
+			<option>tarde</option>
+			<option>Noite</option>	
+		</select>
+
+Em um formulario sempre que ouver prioridade usar required dentro da tag
+<input '''''''''' ''' '' propriedade=required> obrigatório.
+
+propriedade=placeholder sugestão de preenchimento ocupa o espaço ate o memnto da digitação
+placeholder=""
+
+propriedade checked para deixar marcado um radio-button para sugestão é sempre bom deixar marcado
+propriedades de input--------------------------------------------------
+placeholder=preenchimento antes da didgitação
+checked=
+required= tranforma um preenchimento comum em um obrigatório
+divisão---------------------------------------------------
+<div>- divisão comum
+<fieldset>- varios campos referentes a um mesmo assunto.tradução cunjunto de campos
+exemplo de fieldset: informaçoes de um cartão poderm ser guardadas em um fieldset
+dentro de fieldset não existe paragrafo <p>.O titulo de um fieldset é um <legend>
+
+alt de imagens é uma alternativa caso a imagem não carregue
+Propriedade tranform:scale-----------------------------------
+scale é o valor escala da propriedade trasform multiplicando scale(1.2)
+usando a propriedade transition podemos alterar o tempo da variação
+TABELA--------------------------------------
+	<table>
+	<thead>
+		<tr>
+			<th>Dias</th> ->colunas
+			<th>Horarios</th>
+		</tr>
+
+	</thead>
+		<tbody>
+			<tr>
+				<td>Segunda</td>
+				<td>08h~20h</td>
+			</tr> ->Linhas
+			<tr>	
+				<td>Terça</td>
+				<td>08h~20h</td>
+			</tr>
+			<tr>
+				<td>Quarta</td>
+				<td>08h~20h</td>
+		</tbody>
+	</table> 
+----------------------------------------------------
+tag para cabeçalho de tabela <thead>
+tag de celula para cabeçalho <th> tag do head da tabela
+tag de corpo da tabela <tbody>
+
+
+-----------------------------------------------------------------
+html, css, javascript > typescript > entender http > (react ou angular) > pre processador css (scss, sass) > gulp, webpack > deploy >
+docker > boas praticas (clean architeture, clean code, tdd)
